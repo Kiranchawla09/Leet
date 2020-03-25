@@ -13,6 +13,6 @@ public:
         {
             f[i]= max(f[i-2]+nums[i], f[i-1]);
         }
- qw[n-1];
+ return f[n-1];
     }
 };
