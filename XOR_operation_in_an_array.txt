@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int xorOperation(int n, int start) {
+        vector <int> nums(n);
+        nums[0]=start;
+        for (int i=1;i<n;i++)
+        {
+            uint32_t temp=start+ i*2;
+            nums[i]=nums[i-1]^temp;
+        }
+        return nums[n-1];
+    }
+};
